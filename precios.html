@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Invie - tus mejores guitarras !</title>
+	<meta charset="utf-8" />
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	
+		<header id="header"  class="header background"> <!-- header -->		
+			<div class="contenedor">
+				<figure class="logo"> <!-- logo -->
+					<img class=" transicion rotacion" src="img/invie.png" alt="Invie Logotipo" width="186"  height="60"   />
+				</figure>
+					<nav class="menu"><!-- menu -->
+						<ul>
+							<li>
+								<a href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="index.html#guitarras">Guitarras</a>
+							</li>
+							<li>
+								<a href="precios.html">Precios</a>
+							</li>
+						</ul>
+					</nav>			
+			</div>
+		</header>
+	
+		<section class="tabla">
+		  	<div class="contenedor">	
+				<table>
+					<thead>
+						<tr>
+							<th>Modelo</th>
+							<th>Precio</th>
+							<th>Descripción</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Invie Classic</td>
+							<td>100 €</td>
+							<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </td>
+						</tr>
+						<tr>
+							<td>Invie Acústica</td>
+							<td>90 €</td>
+							<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+	
+	
+	<footer class="footer"><!-- footer -->
+	  	<div class="contenedor">
+
+			<div class="contacto"> 
+				<img src="img/invie-white.png" alt="Invie Logotipo Footer" />
+				<a href="tel:+34658127574"><strong>Telefono </strong><span>658127574</span></a>
+				<a href="mailto:contacto@invie.es"><strong>E-mail </strong><span>contacto@invie.es</span></a>
+			</div>
+			
+			<div class="formulario">
+				<form class="formulario" action=""> <!-- formulario -->
+					<div class="col-1"> <!-- columna-1 -->
+						<label for="nombre">Nombre</label>
+							<input type="text" required placeholder="Nombre" id="nombre" name="nombre" />
+						
+						<label for="email">E-mail</label>
+							<input type="email" required placeholder="Email" id="email" name="email" />
+						
+						<div class="sexo">  <!-- check elegir sexo -->
+							<label for="mujer">
+								<input type="radio" checked id="mujer" name="sexo" value="mujer" />mujer
+							</label>
+							<label for="hombre">
+								<input type="radio" id="hombre" name="sexo" value="hombre" />hombre
+							</label>
+						</div> <!-- end div sexo	 -->
+							<div class="intereses"> <!-- checkbox -->
+								<label for="cotizacion">
+									<input type="checkbox" checked id="cotizacion" name="intereses" value="cotizacion" />Cotización
+								</label>
+								<label for="reclamos">
+									<input type="checkbox" id="reclamos" name="intereses" value="reclamos" />Reclamos
+								</label>
+								<label for="comentario">
+									<input type="checkbox" id="comentario" name="intereses" value="comentario" />Comentario
+								</label>
+								<label for="otros">
+									<input type="checkbox" id="otros" name="intereses" value="otros" />Otros
+								</label>
+							</div>	<!-- end intereses -->
+					</div><!-- end col-1 -->
+					<div class="col-2"> <!-- columna-2 -->
+								<label for="comentarios">Comentarios</label>	
+									<textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="Comentarios"></textarea>
+									<input class="button" type="submit" value="Enviar" /> <!-- boton enviar -->
+					</div> <!-- end div col-2 -->
+				</form>
+			</div> <!-- end div formulario -->
+
+		</div>	<!-- end contenedor footer -->
+	</footer>
+
+</body>
+</html>
