@@ -78,6 +78,7 @@ table, td, th {
 	position: relative;
 }
 .background {
+	background-color: #395667;
 	background-image: url('../img/background.png');
 	background-size: cover;
 }
@@ -116,6 +117,7 @@ table, td, th {
 	margin-bottom: 60px;
 }
 .guitarras h2 {
+	text-align: center;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 35px;
 
@@ -249,67 +251,91 @@ table, td, th {
   /*transform: rotate(360deg);*/
   transform: scale(1.1) translateX(50px);
 }
+/*menu burguer*/
 .burguer-button {
 	display: inline-block;
 	width: 40px;
 	line-height: 40px;
 	height: 40px;
 	text-align: center;
+	color: white;
 	border-radius: 50%;
 	background: #395667;
 
-	position: absolute;
+	position: fixed;
 	top: 20px;
 	left: 20px;
 	cursor: pointer;
-
 	z-index: 3;
-
+	display: none;
 }
+.video-demo {
+	max-width: 500px;
+	width: 100%;
+	border: 5px solid #3c5b6e;
+}
+.video-demo-contenedor {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 80px;
+}
+
+
 
  /* ++++++++++++++++++++++++ HAGO EL SITIO RESPONSIVE +++++++++*/
 /*para tablets o ipad ancho  768px*/
-@media screen and (max-width: 768px) {
-/*portada*/
-.portada {
-	height: auto;
-}
-.titulo {
-	font-size: 45px;
-	margin-top: 30px;
-}
-.title a {
-	font-size: 18px;
-}
-.portada .button {
-	display: inline-block;
-	margin-bottom: 30px;
-}
-/*guitarras*/
-.guitarras {
-	text-align: center;
-}
-.right, .left {
-	float: none;
-	position: static;
-}
-.title-b {
-	margin: 0;
-}
-.guitarra li {
-	list-style: none;
-}
-.contenedor-guitarra-a {
-	padding: 0;
-}
-.guitarra.b {
-	height: auto;
+@media screen and (max-width: 800px) {
 
-}
-.contenedor-guitarra-b {
-	position: static;
-	margin: 0;
-}
+	.tabla {
+		margin: 50px 20px;
+	}
+	.tabla .contenedor {
+		overflow: auto;
+	/*	border: 1px solid #273b47;*/
+	}
+	.titulo {
+		font-size: 45px;
+		margin-top: 30px;
+	}
+	.title-a {
+		font-size: 18px;
+	}
+	/*portada*/
+	.portada {
+		height: auto;
+	}
+	.portada .button {
+		margin-bottom: 30px;
+		display: inline-block;
+	}
+	/*guitarras*/
+	.video-demo-contenedor {
+		margin-bottom: 30px;
+	}
+	.guitarras {
+		text-align: center;
+	}
+	.right, .left {
+		float: none;
+		position: static;
+	}
+	.title-b {
+		margin: 0;
+	}
+	.guitarra li {
+		list-style: none;
+	}
+	.guitarra.b {
+		height: auto;
+	}
+	.contenedor-guitarra-a {
+		padding: 0;
+	}
+	.contenedor-guitarra-b {
+		position: static;
+		margin: 0;
+	}
+	
 
 } /*fin de @media para tablets o ipad de 768px ancho*/
 
@@ -348,51 +374,52 @@ table, td, th {
 
 } /*fin responsive para el footer*/
 
-
-
-
-
-
-
-
-
-
-
-
 /*media query para moviles ancho 678px*/
 @media screen and (max-width: 678px) {
 	.header {
 		text-align: center;
-}
+	}
 	.logo {
 		margin: 0;
-}
+	}
 	.menu {
 		position: static;
 		display: block;
-}
+	}
 	.menu li:first-child {
-	margin: 0;
-}
+		margin: 0;
+	}
 	.menu ul {
-	padding: 0;
-}
+		padding: 0;
+	}
 	.rotacion:hover {
-  transform: scale(1.1) translateY(5px);
-}
+  		transform: scale(1.1) translateY(5px);
+ 	}
 
 } /*fin @media query para moviles hasta 678px*/
 
 /*modifico el diseño cuando la pantalla es menor a 500px */
 @media screen and (max-width: 500px) {
+	.burguer-button {
+		display: block;
+	}
 /*portada*/
 	.portada .contenedor {
 		position: static;
 	}
+	.header {
+		position: static;
+	}
+	.header .contenedor {
+		position: static;
+	}
+	.portada .button {
+		display: block;
+	}
 	.menu {
 		width: 100%;
 		background: rgba(255, 48, 80, .8);
-		position: absolute;
+		position: fixed;
 		left: -100%;
 		top: 0;
 		z-index: 2;
@@ -413,35 +440,74 @@ table, td, th {
 		margin:0;
 		padding: 8px 0;
 		border-bottom: 1px solid white;
-}
+	}
 	.menu li:before {
 		display: none;
-}
+	}
 	.menu li:first-child {
 		border-top: 1px solid white;
-}
+	}
 	.portada {
 		text-align: center;
-}
+	}
 	.titulo {
 	font-size: 30px;
-}
-.title a {
+	}
+	.title a {
 	font-size: 16px;
-}
+	}
 
 /*guitarras*/
-.guitarra img {
+	.guitarra img {
 	width: 200px;
 	height: auto;
-}
-.title-b {
+	}
+	.title-b {
 	font-size: 30px;
-}
+	}
+	.video-demo-contenedor {
+	margin: 0 10px 30px 10px;  
+	}
+
+/*precios.html*/
+	.precios .header .logo {
+		margin: 50px;
+	}
+/*precios.html*/
+
+/*footer*/
+	.col-2 {
+		align-items: stretch;
+	}
+
 } /*fin media query moviles hasts 500px*/
 
+/*responsive para video*/
 
+video {
+	width: 100%;
+}
 
+.video-responsive-contenedor {
+	position: relative;
+	padding-top: 56.25%;
+}
+
+.video-responsive-src {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+}
+/*para pantallas retina*/
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+	.background {
+	background-image: url('../img/background2x.png');
+	}
+}
 
 
 
