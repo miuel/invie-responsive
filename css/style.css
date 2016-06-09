@@ -341,29 +341,44 @@ table, td, th {
 
 /*aqui hago el responsive para el footer cuando ancho es menor a 768 de un ipad*/
 @media screen and (max-width: 767px) {
+/*footer */
 	.footer .contenedor {
 		display: block;
 	}
 	.contacto {
 		margin: 0 auto;
+		display: block;
+	}
+	.contacto a {
+		display: block;
 	}
 	.formulario {
 		display: block;
 		margin: 0 auto;
 		width: 300px;
 	}
+	.formulario label {
+		font-size: 20px;
+	}
+	.sexo label {
+		display: block;
+	}
 	.intereses label {
 		display: block;
-		font-size: 16px;
+		font-size: 20px;
 	}
+	.col-1 {
+  		margin: 0;
+  	}
+ input[type="text"]{
+ 	margin-bottom: 30px;
+ } 		
  input[type="text"],
  input[type="email"] {
     font-size: 16px;
     padding: 5px;
   }
-  .col-1 {
-  	margin: 0;
-  }
+
  textarea {
  	width: 100%;
  }

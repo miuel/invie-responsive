@@ -4,7 +4,7 @@
 	<title>Invie - tus mejores guitarras !</title>
 	<meta charset="utf-8" />
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/style.css">
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no" />
 </head>
 
@@ -124,6 +124,25 @@
 	<!-- buscando codigo de hammer.js para los gestos -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 
+	<!-- cargo las fuentes -->
+	<script type="text/javascript">
+		  WebFontConfig = {
+		    google: { families: [ 'Montserrat:400,700:latin', 'Allerta::latin' ] }
+		  };
+		  (function() {
+		    var wf = document.createElement('script');
+		    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+		    wf.type = 'text/javascript';
+		    wf.async = 'true';
+		    var s = document.getElementsByTagName('script')[0];
+		    s.parentNode.insertBefore(wf, s);
+		  })();
+    </script>
+	<!-- buscando codigo de be lazy -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.6.2/blazy.min.js"></script>
+	<!-- buscando codigo de hammer.js para los gestos -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+
 	<!-- dando interactividad al menu y al sitio cuando es responsive -->
 	<script>
 
@@ -164,8 +183,7 @@
 	gestos.on('swipeleft', hideMenu);
 	gestos.on('swiperight', showMenu);
 
-
 	</script>
-
+	<link rel="stylesheet" href="css/style.css">
 </body>
 </html>
